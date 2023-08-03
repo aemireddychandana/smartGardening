@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+function OnButton1()
+{
+    document.Form1.action = "login.html"
+    document.Form1.target = "_blank";    // Open in a new window
+    document.Form1.submit();             // Submit the page
+    return true;
+}
+
+function OnButton2()
+{
+    document.Form1.action = "Register.html"
+    document.Form1.target = "_blank";    // Open in a new window
+    document.Form1.submit();             // Submit the page
+    return true;
+}
+
+</script>
+
+</head>
+<body>
+<form name="Form1" method="post">
+
+<!-- Add the data entry bits -->
+Your Name <input type="text" name="text1" size="10" /><br />
+
+<!-- Add some buttons -->
+<INPUT type="button" value="Button1" name=button1 onclick="return OnButton1();">
+<INPUT type="button" value="Button2" name=button2 onclick="return OnButton2();">
+
+<!-- close the form -->
+</form>
+</body>
+</html>

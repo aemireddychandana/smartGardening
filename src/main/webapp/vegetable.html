@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Vegetables</title>
+<link rel="stylesheet" href="style2.css" />
+<style>
+
+* {
+  box-sizing: border-box;
+  font-family: "Lucida Console", "Courier New";
+}
+
+
+html, body{
+  
+  height: 100vh;
+  width: 100%; 
+
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.container {
+  position: relative;
+  width: 100%;
+  
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+</style>
+</head>
+<body><div class="topnav" id="myTopnav">
+  <a href="plants.html" class="active">Home</a>
+  </div>
+<center><h2>Vegetables</h2></center>
+<div class="row">
+<div class="column">
+		<div class="container">
+		<a href="aloo.html">
+    		<img src="images\aloo.jpeg" alt="Alu" style="width:100%"></a>
+		<div class="overlay">Potatoes</div>
+		</div>
+  	</div>
+  	<div class="column">
+		<div class="container">
+		<a href="garlic.html">
+    		<img src="images\garlic.jpeg" alt="Garlic" style="width:100%"></a>
+		<div class="overlay">Garlic</div>
+		</div>
+  	</div>
+  	<div class="column">
+		<div class="container">
+		<a href="onion.html">
+    		<img src="images\onion.jpeg" alt="Onion" style="width:100%"></a>
+		<div class="overlay">Onion</div>
+		</div>
+  	</div>
+   	<div class="column">
+		<div class="container">
+		<a href="ginger.html">
+    		<img src="images\ginger.jpeg" alt="Ginger" style="width:100%"></a>
+		<div class="overlay">Ginger</div>
+		</div>
+  	</div>
+</div>
+</body>
+</html>

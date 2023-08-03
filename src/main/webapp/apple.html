@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apple</title>
+<link rel="stylesheet" href="style2.css" />
+<style>
+* {
+  box-sizing: border-box;
+ font-family: Comic Sans MS, Comic Sans, cursive;
+}
+h1
+{
+font-size:35px;
+}
+h3
+{
+font-size:25px;
+}
+p
+{
+font-size:20px;}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 75%;
+}
+
+.right {
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="plants.html" class="active">Home</a>
+  </div>
+<div class="row">
+  <div class="column left">
+  <h1>Apple Growing Guide</h1>
+<h3>Soil</h3>
+<p>Prepare a large hole by breaking up the soil and adding plenty of compost or other organic matter.</p>
+<h3>Position</h3>
+<p>Sun or partial shade.</p>
+<h3>Frost tolerant</h3>
+<p>Yes.</p>
+<h3>Feeding</h3>
+<p>Not normally required</p>
+<h3>Spacing</h3>
+<p><b>Single Plants:</b>16' 4" (5.00m) each way (minimum)
+<b>Rows:</b>16' 4" (5.00m) with 16' 4" (5.00m) row gap (minimum)</p>
+<h3>Sow and Plant</h3>
+<p>Plant in mid-fall or early winter when it's not too cold for a little root growth to help them establish. Should be planted with at least one other apple tree which flowers at a similar time to aid pollination.</p>
+<h3>Troubleshooting</h3>
+<p>Yellow-and-black Colorado potato beetles lay eggs on leaf undersides, which hatch into fat red leaf- and flower-eating larvae. Use row covers to exclude them or hand pick off.</p>
+</div>
+  <div class="column right" >
+  <img src="images/apple.jpeg">
+    <center><h2>Apples</h2></center> 
+  </div>
+</div>
+
+
+</body>
+</html>

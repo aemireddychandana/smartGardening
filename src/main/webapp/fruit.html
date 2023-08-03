@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fruits</title>
+<link rel="stylesheet" href="style2.css" />
+<style>
+
+* {
+  box-sizing: border-box;
+  font-family: "Lucida Console", "Courier New";
+}
+
+
+html, body{
+  
+  height: 100vh;
+  width: 100%; 
+
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.container {
+  position: relative;
+  width: 100%;
+  
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="plants.html" class="active">Home</a>
+  </div>
+<center><h2>Fruits</h2></center>
+
+<div class="row">
+<div class="column">
+		<div class="container">
+		<a href="orange.html">
+    		<img src="images\orange.jpeg" alt="Orange" style="width:100%"></a>
+		<div class="overlay">Orange</div>
+		</div>
+  	</div>
+  	<div class="column">
+		<div class="container">
+		<a href="pomegranate.html">
+    		<img src="images\pomegranate.jpeg" alt="Pomegranate" style="width:100%"></a>
+		<div class="overlay">Pomegranate</div>
+		</div>
+  	</div>
+  	<div class="column">
+		<div class="container">
+		<a href="apple.html">
+    		<img src="images\apple.jpeg" alt="Apple" style="width:100%"></a>
+		<div class="overlay">Apple</div>
+		</div>
+  	</div>
+   	<div class="column">
+		<div class="container">
+		<a href="watermelon.html">
+    		<img src="images\watermelon.jpeg" alt="Watermelon" style="width:100%"></a>
+		<div class="overlay">Watermelon</div>
+  		</div>
+	</div>
+</div>
+</body>
+</html>

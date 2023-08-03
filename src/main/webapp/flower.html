@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Flowers</title>
+<link rel="stylesheet" href="style2.css" />
+<style>
+
+* {
+  box-sizing: border-box;
+  font-family: "Lucida Console", "Courier New";
+}
+
+
+html, body{
+  
+  height: 100vh;
+  width: 100%; 
+
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.container {
+  position: relative;
+  width: 100%;
+  
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="plants.html" class="active">Home</a>
+  </div>
+<center><h2>Flowers</h2></center>
+
+<div class="row">
+	<div class="column">
+		<div class="container">
+		<a href="rose.html">
+    		<img src="images\rose.jpeg" alt="Rose" style="width:100%"></a>
+		<div class="overlay">Rose</div>
+		</div>
+ 	</div>
+  	<div class="column">
+		<div class="container">
+		<a href="marigold.html">
+    		<img src="images\marigold.jpeg" alt="Marigold" style="width:100%"></a>
+		<div class="overlay">Marigold</div>
+  		</div>
+	</div>
+  	<div class="column">
+		<div class="container">
+		<a href="lantana.html">
+   		<img src="images\lantana.jpeg" alt="Lantana" style="width:100%"></a>
+		<div class="overlay">Lantana</div>
+		</div>
+  	</div>
+   	<div class="column">
+		<div class="container">
+		<a href="petunia.html">
+    		<img src="images\petunia.jpeg" alt="Petunia" style="width:100%"></a>
+		<div class="overlay">Petunia</div>
+  		</div>
+	</div>
+</div>
+</body>
+</html>
